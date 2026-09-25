@@ -1,0 +1,14 @@
+[project]
+name = "merged-directory-walker"
+version = "0.1.0"
+description = "Walks multiple directory trees simultaneously and yields grouped tuples of matching paths from each root."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
