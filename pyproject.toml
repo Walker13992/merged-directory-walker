@@ -1,6 +1,6 @@
 [project]
 name = "merged-directory-walker"
-version = "0.1.0"
+version = "0.1.1"
 description = "Walks multiple directory trees simultaneously and yields grouped tuples of matching paths from each root."
 requires-python = ">=3.10"
 dependencies = []
