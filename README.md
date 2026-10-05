@@ -57,3 +57,10 @@ breadth-first within a level). This makes output reproducible across platforms.
 - **Missing or unreadable roots are treated as empty.** Every entry from such
   a root will be `None`. This is deliberate so a root that may not exist yet
   (e.g. a baseline) does not crash the walk.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
